@@ -18,10 +18,10 @@ export default function Header() {
           <li key={item.href} className="list-none">
             <Link
               href={item.href}
-              className="flex group transition items-center gap-x-4 "
+              className="flex group transition items-center gap-x-4 w-fit"
             >
               <span className="w-10 group-hover:w-20 duration-300 group-hover:opacity-100 opacity-60 h-[1px] bg-white" />
-              <span className="uppercase  opacity-60 group-hover:transition group-hover:ease-in-out duration-300 group-hover:opacity-100 text-sm font-medium">
+              <span className="uppercase tracking-widest opacity-60 group-hover:transition group-hover:ease-in-out duration-300 group-hover:opacity-100 text-sm font-medium">
                 {item.title}
               </span>
             </Link>
@@ -36,7 +36,9 @@ export default function Header() {
         </div>
 
         <div className="space-y-4">
-          <h1 className="text-sm font-bold opacity-60">SAY HELLO</h1>
+          <h1 className="text-sm font-bold tracking-widest opacity-60">
+            SAY HELLO
+          </h1>
           <div className="flex gap-x-4">
             <svg
               className="size-[20px] fill-white opacity-60 hover:fill-accent hover:opacity-100"
