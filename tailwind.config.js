@@ -1,4 +1,3 @@
-import { Container } from "postcss";
 import { fontFamily } from "tailwindcss/defaultTheme";
 
 /** @type {import('tailwindcss').Config} */
@@ -17,8 +16,13 @@ module.exports = {
       },
       colors: {
         primary: "hsl(0, 0%, 7%)",
+        secondary: "hsl(0, 0%, 9%)",
         accent: "hsl(8, 72%, 55%)",
         selection: "",
+      },
+      backgroundImage: {
+        "button-gradient":
+          "linear-gradient(to right, hsl(8, 50%, 28%), hsl(8, 72%, 55%), hsl(8, 41%, 17%))",
       },
       fontFamily: {
         sans: ["var(--font-geist-sans)", ...fontFamily.sans],
