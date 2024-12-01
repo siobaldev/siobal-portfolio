@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="lg:flex lg:flex-col lg:w-1/2 lg:justify-between lg:sticky">
+    <header className="lg:flex lg:top-0 max-h-screen lg:flex-col py-14 md:py-20 lg:py-32 lg:w-1/2 lg:justify-between lg:sticky">
       <div className="mb-6">
         <h1 className="lg:text-5xl text-4xl tracking-tight font-bold">
           Minard Siobal
