@@ -8,14 +8,14 @@ export default function Technologies() {
       <h1 className="uppercase text-sm font-bold w-fit tracking-widest hover:text-accent hover:opacity-100">
         Technologies
       </h1>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-4 max-[550px]:grid-cols-1">
         {techItems.map((item) => (
           <div
             key={item.title}
-            className="inline-flex p-2 items-center gap-x-4 rounded-lg bg-secondary"
+            className="inline-flex p-3 items-center gap-x-4 rounded-lg group hover:ring-1 hover:ring-white/[0.03] bg-secondary"
           >
             <div
-              className={`p-2 pl-2 ${item.bgColor} rounded-md`}
+              className={`p-2 ${item.bgColor} rounded-md group-hover:scale-110 transition`}
               style={{ backgroundColor: `${item.bgColor}20` }}
             >
               <Image
@@ -29,7 +29,9 @@ export default function Technologies() {
 
             <div>
               <h1>{item.title}</h1>
-              <p className="text-sm opacity-60">{item.description}</p>
+              <p className="text-xs tracking-wide opacity-60">
+                {item.description}
+              </p>
             </div>
           </div>
         ))}
