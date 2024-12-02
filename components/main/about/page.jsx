@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <section id="#about" className="space-y-8">
+    <section id="about" className="space-y-8 scroll-mt-32">
       <h1 className="uppercase text-sm font-bold w-fit tracking-widest hover:text-accent hover:opacity-100">
         about
       </h1>
