@@ -10,7 +10,12 @@ export default function Header() {
           Minard Siobal
         </h1>
         <h2 className="text-lg font-medium lg:text-2xl">Front End Developer</h2>
-        <p className="opacity-60">Based in Philippines</p>
+        <p className="opacity-60 group">
+          Based in{" "}
+          <span className="lg:cursor-[url('/assets/ph-flag.png'),_pointer] transition inline-flex">
+            Philippines
+          </span>
+        </p>
       </div>
 
       <div className="hidden lg:flex lg:flex-col gap-y-2">
