@@ -5,7 +5,7 @@ import { projectItems } from "@/lib/data";
 
 export default function Projects() {
   return (
-    <section id="#projects" className="space-y-8">
+    <section id="projects" className="space-y-8 scroll-mt-32">
       <h1 className="uppercase text-sm font-bold w-fit tracking-widest hover:text-accent hover:opacity-100">
         projects
       </h1>

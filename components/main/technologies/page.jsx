@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Technologies() {
   return (
-    <section id="#technologies" className="space-y-8">
+    <section id="technologies" className="space-y-8 scroll-mt-32">
       <h1 className="uppercase text-sm font-bold w-fit tracking-widest hover:text-accent hover:opacity-100">
         Technologies
       </h1>
