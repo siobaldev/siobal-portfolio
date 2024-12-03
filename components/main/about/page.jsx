@@ -7,11 +7,11 @@ export default function About() {
         about
       </h1>
       <p className="opacity-60">
-        Hey! I'm Minard, a front-end developer who started taking interest in
-        awesome websites in 2023. I specialize in UI design and crafting
+        Hey! I&apos;m Minard, a front-end developer who started taking interest
+        in awesome websites in 2023. I specialize in UI design and crafting
         engaging experiences with great attention to detail. <br /> <br />
-        When I'm not coding, you'll find me reading comics, playing AQW, or
-        browsing meowrot(I love cats) contents.
+        When I&apos;m not coding, you&apos;ll find me reading comics, playing
+        AQW, or browsing meowrot(I love cats) contents.
       </p>
     </section>
   );
