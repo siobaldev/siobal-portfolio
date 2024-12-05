@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer {
+@layer base {
   .grain:after {
     content: "";
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
