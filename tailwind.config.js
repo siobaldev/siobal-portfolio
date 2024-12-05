@@ -1,3 +1,4 @@
+import { transform } from "next/dist/build/swc/generated-native";
 import { fontFamily } from "tailwindcss/defaultTheme";
 
 /** @type {import('tailwindcss').Config} */
@@ -20,9 +21,22 @@ module.exports = {
         accent: "hsl(8, 72%, 55%)",
         selection: "",
       },
+      keyframes: {
+        "border-spin": {
+          "100%": {
+            transform: "rotate(-360deg)",
+          },
+        },
+      },
+      animation: {
+        "border-spin": "border-spin 7s linear infinite",
+      },
+
       backgroundImage: {
         "button-gradient":
           "linear-gradient(to right, hsl(8, 50%, 28%), hsl(8, 72%, 55%), hsl(8, 41%, 17%))",
+        conic:
+          "conic-gradient(from 10deg, rgba(255, 255, 255, 0.6), transparent, transparent)",
       },
       fontFamily: {
         sans: ["var(--font-geist-sans)", ...fontFamily.sans],

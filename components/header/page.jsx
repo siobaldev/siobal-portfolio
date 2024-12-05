@@ -34,9 +34,9 @@ export default function Header() {
         ))}
       </div>
       <div>
-        <div className="mb-6">
+        <div className="mb-6 relative rounded-md before:bg-conic before:content-[''] before:left-[-25%] before:top-[-100%] h-[50px] w-32 before:absolute before:h-[300%] before:w-[150%] bg-[#1A1A19] overflow-hidden before:animate-border-spin">
           <Link href="#contact">
-            <button className="bg-button-gradient font-bold px-4 py-1 ring-4 rounded-md ring-white/[.1]">
+            <button className="absolute bg-button-gradient left-[3px] top-[3px] ring-2 ring-white/5 h-[calc(100%-6px)] w-[calc(100%-6px)] font-bold px-4 py-2 rounded-md">
               Hire Me
             </button>
           </Link>
