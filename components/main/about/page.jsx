@@ -46,7 +46,10 @@ export default function About() {
         </span>
         <span className="underline relative group">
           <span className="opacity-60">cats</span>
-          <Tooltip title={`${isNekoVisible ? "Hide Neko" : "Show Neko"}`} />
+          <Tooltip
+            title={`${isNekoVisible ? "Hide Neko" : "Show Neko"}`}
+            position={"-bottom-24"}
+          />
           <HangingCat
             className={`size-12 absolute -right-5  top-[16px] cursor-pointer transition-colors duration-300 ${
               isNekoVisible ? "fill-[#A47764]" : "fill-white"

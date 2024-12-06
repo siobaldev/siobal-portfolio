@@ -12,7 +12,7 @@ export default function Technologies() {
         {techItems.map((item) => (
           <div
             key={item.title}
-            className="inline-flex p-3 items-center gap-x-4 rounded-lg group hover:ring-1 hover:ring-white/[0.03] bg-secondary"
+            className="inline-flex p-3 items-center gap-x-4 rounded-lg group hover:ring-1 hover:ring-accent/[0.2] hover:bg-accent/[0.1] bg-secondary"
           >
             <div
               className={`p-2 ${item.bgColor} rounded-md group-hover:scale-110 transition`}
