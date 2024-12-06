@@ -34,7 +34,7 @@ module.exports = {
 
       backgroundImage: {
         "button-gradient":
-          "linear-gradient(to right, hsl(8, 50%, 28%), hsl(8, 72%, 55%), hsl(8, 41%, 17%))",
+          "linear-gradient(to right, hsl(16, 21%, 31%), hsl(18, 26%, 52%), hsl(17, 16%, 22%))",
         conic:
           "conic-gradient(from 10deg, rgba(255, 255, 255, 0.6), transparent, transparent)",
       },

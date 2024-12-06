@@ -40,7 +40,7 @@ export default function Header() {
       <div>
         <div className="mb-6 lg:mb-16 relative rounded-md before:bg-conic before:content-[''] before:left-[-25%] before:top-[-100%] h-[50px] w-28 before:absolute before:h-[300%] before:w-[150%] bg-[#1A1A19] overflow-hidden before:animate-border-spin">
           <Link href="#contact">
-            <button className="absolute bg-accent left-[3px] top-[3px] ring-2 ring-white/5 h-[calc(100%-6px)] w-[calc(100%-6px)] font-bold px-4 py-2 rounded-md">
+            <button className="absolute bg-button-gradient left-[3px] top-[3px] ring-2 ring-white/5 h-[calc(100%-6px)] w-[calc(100%-6px)] font-bold px-4 py-2 rounded-md">
               Hire Me
             </button>
           </Link>
