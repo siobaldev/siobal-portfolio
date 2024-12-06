@@ -18,7 +18,7 @@ module.exports = {
       colors: {
         primary: "hsl(0, 0%, 7%)",
         secondary: "hsl(0, 0%, 9%)",
-        accent: "hsl(8, 72%, 55%)",
+        accent: "hsl(18, 26%, 52%)",
         selection: "",
       },
       keyframes: {
