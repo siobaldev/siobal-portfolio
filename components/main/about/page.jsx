@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import HangingCat from "@/public/assets/hangingCat.svg";
+import Tooltip from "@/components/ui/tooltip";
 
 export default function About() {
   const [isNekoVisible, setIsNekoVisible] = useState(true);
@@ -43,8 +44,9 @@ export default function About() {
           When I&apos;m not coding, you&apos;ll find me reading comics, playing
           AQW, or browsing meowrot contents. I love{" "}
         </span>
-        <span className="underline relative">
+        <span className="underline relative group">
           <span className="opacity-60">cats</span>
+          <Tooltip title={`${isNekoVisible ? "Hide Neko" : "Show Neko"}`} />
           <HangingCat
             className={`size-12 absolute -right-5  top-[16px] cursor-pointer transition-colors duration-300 ${
               isNekoVisible ? "fill-[#A47764]" : "fill-white"

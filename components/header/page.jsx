@@ -52,7 +52,7 @@ export default function Header() {
           </h1>
           <div className="flex gap-x-4">
             <div className="relative group">
-              <Tooltip title={"X(Twitter)"} />
+              <Tooltip title={"X (Formerly Twitter)"} />
               <Link href="https://twitter.com/_siobaldev" target="_blank">
                 <X className="size-6 fill-white opacity-60 hover:fill-accent hover:opacity-100" />
               </Link>
