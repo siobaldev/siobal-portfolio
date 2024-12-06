@@ -34,7 +34,7 @@ export default function Projects() {
               {item.tag.map((tag, tagIndex) => (
                 <span
                   key={tagIndex}
-                  className="bg-white/[0.03] text-sm text-white/60 px-3 py-1 rounded-full"
+                  className="bg-accent/[0.08] text-sm text-accent/87 px-3 py-1 rounded-full"
                 >
                   {tag}
                 </span>
