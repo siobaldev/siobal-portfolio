@@ -46,7 +46,7 @@ export default function About() {
         <span className="underline relative">
           <span className="opacity-60">cats</span>
           <HangingCat
-            className={`size-12 absolute -right-5  top-[16px] cursor-pointer ${
+            className={`size-12 absolute -right-5  top-[16px] cursor-pointer transition-colors duration-300 ${
               isNekoVisible ? "fill-[#A47764]" : "fill-white"
             }`}
             onClick={toggleNeko}
