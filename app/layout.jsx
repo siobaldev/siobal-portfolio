@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import { Toaster } from "sonner";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -43,6 +44,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} antialiased font-sans bg-primary`}
       >
         {children}
+        <Toaster />
       </body>
     </html>
   );
