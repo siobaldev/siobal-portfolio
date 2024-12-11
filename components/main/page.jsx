@@ -6,7 +6,7 @@ import Contact from "./contact/page";
 
 export default function Main() {
   return (
-    <main className="lg:w-1/2 lg:space-y-36 space-y-20 md:space-y-28 mb-[130px] md:py-20 lg:py-32">
+    <main className="lg:w-1/2 lg:space-y-36 space-y-20 md:space-y-28 mb-[114px] md:py-20 lg:py-32">
       <About />
       <Projects />
       <Technologies />
