@@ -29,7 +29,9 @@ export default function TableOfContents() {
         element.setAttribute("data-title", item.title);
 
         const observer = new IntersectionObserver(observerCallback, {
-          threshold: 1,
+          root: null,
+          threshold: 0.8,
+          rootMargin: "-150px 0px -300px 0px",
         });
         observer.observe(element);
         observers.push(observer);
