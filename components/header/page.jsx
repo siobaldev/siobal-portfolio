@@ -1,10 +1,13 @@
-import React from "react";
-import { navItems } from "@/lib/data";
+"use client";
+
+import React, { useState } from "react";
 import Link from "next/link";
 import X from "@/public/assets/x.svg";
 import Github from "@/public/assets/github.svg";
 import Linkedin from "@/public/assets/linkedin.svg";
 import Tooltip from "../ui/tooltip";
+
+import TableOfContents from "../tableOfContents/page";
 
 export default function Header() {
   return (
@@ -22,21 +25,8 @@ export default function Header() {
         </p>
       </div>
 
-      <div className="hidden lg:flex lg:flex-col gap-y-2">
-        {navItems.map((item) => (
-          <li key={item.href} className="list-none">
-            <Link
-              href={item.href}
-              className="flex group transition items-center gap-x-4 w-fit"
-            >
-              <span className="w-10 group-hover:w-20 duration-300 group-hover:opacity-100 opacity-60 h-[1px] bg-white" />
-              <span className="uppercase tracking-widest opacity-60 group-hover:transition group-hover:ease-in-out duration-300 group-hover:opacity-100 text-sm font-medium">
-                {item.title}
-              </span>
-            </Link>
-          </li>
-        ))}
-      </div>
+      <TableOfContents />
+
       <div>
         <div className="mb-6 lg:mb-16 relative rounded-md before:bg-conic before:content-[''] before:left-[-25%] before:top-[-100%] h-[50px] w-28 before:absolute before:h-[300%] before:w-[150%] bg-[#1A1A19] overflow-hidden before:animate-border-spin">
           <Link href="#contact">
