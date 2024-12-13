@@ -1,4 +1,3 @@
-import { transform } from "next/dist/build/swc/generated-native";
 import { fontFamily } from "tailwindcss/defaultTheme";
 
 /** @type {import('tailwindcss').Config} */
