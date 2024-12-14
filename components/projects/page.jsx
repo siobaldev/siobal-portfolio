@@ -12,10 +12,9 @@ export default function Projects() {
       </h1>
       <div className="space-y-16">
         {projectItems.map((item) => (
-          <div className="block group relative">
+          <div key={item.title} className="block group relative">
             <div className="absolute -inset-x-4 -inset-y-4 -z-10 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-secondary lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg" />
             <Link
-              key={item.title}
               href="/"
               className="inline-flex items-center gap-x-2 relative"
             >
@@ -39,9 +38,9 @@ export default function Projects() {
             <Link
               href={item.githubLink}
               target="_blank"
-              className="mt-4 flex gap-x-2 group/github"
+              className="mt-4 flex gap-x-2 group/github items-center"
             >
-              <Github className="size-6 fill-white opacity-60 group-hover/github:fill-accent group-hover/github:transition-all group-hover/github:opacity-100" />
+              <Github className="size-5 fill-white opacity-60 group-hover/github:fill-accent group-hover/github:transition-all group-hover/github:opacity-100" />
               <span className="opacity-60 group-hover/github:text-accent group-hover/github:transition-all text-sm group-hover/github:opacity-100">
                 {item.githubLink}
               </span>
