@@ -1,7 +1,8 @@
 ## Minard Siobal | Portfolio
 
 This is my personal portfolio website, built to showcase my projects, skills, and the technologies I use as a frontend developer aspiring to become a full-stack developer.
-#### 🔗 <a href="">Live Demo</a>
+
+#### 🔗 <a href="https://siobal-portfolio.vercel.app/">Live Demo</a>
 
 ### Technology Used:
 
@@ -16,6 +17,6 @@ This is my personal portfolio website, built to showcase my projects, skills, an
 - Highlights various development projects
 - Functional contact form powered by Web3Forms
 
-## 🔗 <a href="https://github.com/adryd325/oneko.js">Oneko.js</a> 
+## 🔗 <a href="https://github.com/adryd325/oneko.js">Oneko.js</a>
 
 Special thanks to <a href="https://github.com/adryd325/">@adryd325<a/> for their amazing work.
