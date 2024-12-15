@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useState, useEffect, useRef, useMemo } from "react";
+import { useState, useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 import { navItems } from "@/lib/data";
 
@@ -23,7 +23,7 @@ export default function TableOfContents() {
 
     const setupObservers = () => {
       navItems.forEach((item) => {
-        const sectionId = item.href.replace("#", "");
+        const sectionId = item.title.replace("#", "");
         const element = document.getElementById(sectionId);
         if (element) {
           element.setAttribute("data-title", item.title);
