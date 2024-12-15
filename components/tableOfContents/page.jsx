@@ -68,8 +68,8 @@ export default function TableOfContents() {
   return (
     <div className="hidden lg:flex lg:flex-col gap-y-3">
       {navItems.map((item) => (
-        <ul>
-          <li key={item.href} className="list-none">
+        <ul key={item.href}>
+          <li className="list-none">
             <Link
               href={item.href}
               onClick={() => handleLinkClick(item.title)}
