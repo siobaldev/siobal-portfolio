@@ -16,8 +16,8 @@ export default function Technologies() {
       <div className="flex items-center justify-center gap-x-4">
         <button
           onClick={() => setTechnology("Main")}
-          className={`text-xs opacity-30 ${
-            technology === "Main" ? `opacity-87` : ``
+          className={`text-sm ${
+            technology === "Main" ? `opacity-87` : `opacity-60`
           }`}
         >
           Main Technologies
@@ -25,8 +25,8 @@ export default function Technologies() {
         |
         <button
           onClick={() => setTechnology("All")}
-          className={`text-xs opacity-30 ${
-            technology === "All" ? `opacity-87` : ``
+          className={`text-sm ${
+            technology === "All" ? `opacity-100` : `opacity-60`
           }`}
         >
           All Technologies
@@ -83,7 +83,7 @@ export default function Technologies() {
               </div>
             ))}
           </div>
-          <p className="text-[0.625rem] max-w-md text-center opacity-70 italic">
+          <p className="text-xs max-w-md text-center opacity-70 italic">
             Disclaimer: This list includes all the technologies I&apos;ve worked
             with in the past, but does not necessarily reflect the ones I am
             most proficient in.
