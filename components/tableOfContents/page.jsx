@@ -68,23 +68,25 @@ export default function TableOfContents() {
   return (
     <div className="hidden lg:flex lg:flex-col gap-y-3">
       {navItems.map((item) => (
-        <li key={item.href} className="list-none">
-          <Link
-            href={item.href}
-            onClick={() => handleLinkClick(item.title)}
-            className={cn(
-              "flex transition items-center gap-x-4 w-fit before:content-[''] before:hover:w-20 hover:text-white/100 before:hover:bg-white/100 before:w-10 before:h-[1px] before:bg-white/60 text-white/60 before:transition-all before:duration-300 before:ease-in-out before:opacity-60",
-              {
-                "before:bg-white/100 before:w-20 text-white/100 before:transition-all before:duration-300 before:ease-in-out before:opacity-100":
-                  activeSection === item.title,
-              }
-            )}
-          >
-            <span className="uppercase tracking-widest text-sm font-medium">
-              {item.title}
-            </span>
-          </Link>
-        </li>
+        <ul>
+          <li key={item.href} className="list-none">
+            <Link
+              href={item.href}
+              onClick={() => handleLinkClick(item.title)}
+              className={cn(
+                "flex transition items-center gap-x-4 w-fit before:content-[''] before:hover:w-20 hover:text-white/100 before:hover:bg-white/100 before:w-10 before:h-[1px] before:bg-white/60 text-white/60 before:transition-all before:duration-300 before:ease-in-out before:opacity-60",
+                {
+                  "before:bg-white/100 before:w-20 text-white/100 before:transition-all before:duration-300 before:ease-in-out before:opacity-100":
+                    activeSection === item.title,
+                }
+              )}
+            >
+              <span className="uppercase tracking-widest text-sm font-medium">
+                {item.title}
+              </span>
+            </Link>
+          </li>
+        </ul>
       ))}
     </div>
   );
