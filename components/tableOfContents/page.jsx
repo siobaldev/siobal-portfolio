@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import { cn } from "@/lib/utils";
 import { navItems } from "@/lib/data";
 
@@ -21,22 +21,24 @@ export default function TableOfContents() {
       }
     };
 
-    navItems.forEach((item) => {
-      const sectionId = item.href.replace("#", "");
-      const element = document.getElementById(sectionId);
+    const setupObservers = () => {
+      navItems.forEach((item) => {
+        const sectionId = item.href.replace("#", "");
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.setAttribute("data-title", item.title);
+          const observer = new IntersectionObserver(observerCallback, {
+            root: null,
+            threshold: 0.6,
+            rootMargin: "-150px 0px -300px 0px",
+          });
+          observer.observe(element);
+          observers.push(observer);
+        }
+      });
+    };
 
-      if (element) {
-        element.setAttribute("data-title", item.title);
-
-        const observer = new IntersectionObserver(observerCallback, {
-          root: null,
-          threshold: 0.6,
-          rootMargin: "-150px 0px -300px 0px",
-        });
-        observer.observe(element);
-        observers.push(observer);
-      }
-    });
+    setupObservers();
 
     const handleScroll = () => {
       if (scrollTimeoutRef.current) {
@@ -56,7 +58,7 @@ export default function TableOfContents() {
         clearTimeout(scrollTimeoutRef.current);
       }
     };
-  }, [isManualScroll, navItems]);
+  }, [isManualScroll]);
 
   const handleLinkClick = (title) => {
     setIsManualScroll(true);

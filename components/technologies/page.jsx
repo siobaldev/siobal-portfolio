@@ -84,9 +84,9 @@ export default function Technologies() {
             ))}
           </div>
           <p className="text-[0.625rem] max-w-md text-center opacity-70 italic">
-            Disclaimer: This list includes all the technologies I've worked with
-            in the past, but does not necessarily reflect the ones I am most
-            proficient in.
+            Disclaimer: This list includes all the technologies I&apos;ve worked
+            with in the past, but does not necessarily reflect the ones I am
+            most proficient in.
           </p>
         </div>
       )}
