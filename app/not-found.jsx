@@ -42,11 +42,12 @@ export default function NotFound() {
             </Link>
           </div>
           <Image
-            className="size-[clamp(10rem,30rem+10vw,50rem)] bottom-0 right-0 scale-x-[-1] absolute"
+            className="lg:size-[40rem] md:size-[30rem] sm:size-[20rem] -z-10 size-[20rem] bottom-0 right-0 scale-x-[-1] absolute"
             src={"/assets/pop-cat.gif"}
             width={100}
             height={100}
             alt="pop-cat"
+            unoptimized
           />
         </div>
       </div>
