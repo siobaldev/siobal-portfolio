@@ -16,7 +16,7 @@ export default function Projects() {
             <div className="absolute -inset-x-4 -inset-y-4 -z-10 hidden rounded-md transition motion-reduce:transition-none lg:block lg:group-hover:bg-secondary lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg" />
             <Link
               href={item.projectLink}
-              target={item.projectLink === "/" ? "" : "_black"}
+              target={item.projectLink === "/" ? "" : "_blank"}
               className="inline-flex items-center gap-x-2 relative"
             >
               <Image
