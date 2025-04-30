@@ -2,8 +2,8 @@
 
 This is my personal portfolio website, built to showcase my projects, skills, and the technologies I use as a frontend developer aspiring to become a full-stack developer.
 
-#### 🔗 <a href="https://siobal-portfolio.vercel.app/" rel="noreferrer noopener">Live Demo</a>
-
+#### 🔗 [Live Demo](https://siobal-portfolio.vercel.app/)
+---
 ### Technology Used:
 
 - Framework: Next.js
