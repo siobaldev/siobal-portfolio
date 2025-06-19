@@ -36,11 +36,7 @@ export default function About() {
       </h1>
       <p>
         <span className="opacity-60">
-          {" "}
-          Hey! I&apos;m Minard, a front-end developer who started taking
-          interest in awesome websites in 2023. I specialize in UI design and
-          crafting engaging experiences with great attention to detail. <br />{" "}
-          <br />
+          Hey! I&apos;m Minard, an enthusiastic software developer with a passion for UX/UI design who started my journey in 2023. I love creating applications that are both technically sound and beautifully designed, bridging the gap between user experience and robust development. <br /> <br />
           When I&apos;m not coding, you&apos;ll find me reading comics, playing
           AQW, or browsing meowrot contents. I love{" "}
         </span>

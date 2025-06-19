@@ -16,7 +16,7 @@ export default function Header() {
         <h1 className="lg:text-5xl text-4xl tracking-tight font-bold">
           Minard Siobal
         </h1>
-        <h2 className="text-lg font-medium lg:text-2xl">Front End Developer</h2>
+        <h2 className="text-lg font-medium lg:text-2xl">Software Developer</h2>
         <p className="opacity-60 group">
           Based in{" "}
           <span className="lg:cursor-[url('/assets/ph-flag.png'),_pointer] transition inline-flex">
