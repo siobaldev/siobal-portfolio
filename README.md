@@ -2,8 +2,8 @@
 
 This is my personal portfolio website, built to showcase my projects, skills, and the technologies I use as a frontend developer aspiring to become a full-stack developer.
 
-#### 🔗 <a href="https://siobal-portfolio.vercel.app/" target="_blank">Live Demo</a>
-
+#### 🔗 [Live Demo](https://siobal-portfolio.vercel.app/)
+---
 ### Technology Used:
 
 - Framework: Next.js
@@ -17,6 +17,6 @@ This is my personal portfolio website, built to showcase my projects, skills, an
 - Highlights various development projects
 - Functional contact form powered by Web3Forms
 
-## 🔗 <a href="https://github.com/adryd325/oneko.js">Oneko.js</a>
+## 🔗 [Oneko.js](https://github.com/adryd325/oneko.js)
 
-Special thanks to <a href="https://github.com/adryd325/">@adryd325<a/> for their amazing work.
+Special thanks to [@adryd325](https://github.com/adryd325/) for their amazing work.
