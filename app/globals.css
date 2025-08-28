@@ -7,7 +7,7 @@
     content: "";
     background-image: url("/assets/grain.webp");
     height: 230%;
-    width: 130%;
+    width: 150%;
     position: fixed;
     animation: animateGrain 8s steps(10) infinite;
   }
