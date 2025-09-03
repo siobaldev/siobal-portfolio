@@ -1,12 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
-import X from "@/public/assets/x.svg";
-import Github from "@/public/assets/github.svg";
-import Linkedin from "@/public/assets/linkedin.svg";
+import Image from "next/image";
 import Tooltip from "../ui/tooltip";
-
+import { socialIcons } from "@/lib/data";
 import TableOfContents from "../tableOfContents/page";
 
 export default function Header() {
@@ -41,39 +39,23 @@ export default function Header() {
             SAY HELLO
           </h1>
           <div className="flex gap-x-4">
-            <div className="relative group">
-              <Tooltip title={"X (Formerly Twitter)"} position={"-top-14"} />
-              <Link
-                rel="noopener noreferrer"
-                aria-label="Link to Twitter profile"
-                href="https://twitter.com/_siobaldev"
-                target="_blank"
-              >
-                <X className="size-6 fill-white opacity-60 hover:fill-accent hover:opacity-100" />
-              </Link>
-            </div>
-            <div className="relative group">
-              <Tooltip title={"Github"} position={"-top-14"} />
-              <Link
-                rel="noopener noreferrer"
-                aria-label="Link to Github profile"
-                href="https://github.com/siobaldev"
-                target="_blank"
-              >
-                <Github className="size-6 fill-white opacity-60 hover:fill-accent hover:opacity-100" />
-              </Link>
-            </div>
-            <div className="group relative">
-              <Tooltip title={"Linkedin"} position={"-top-14"} />
-              <Link
-                rel="noopener noreferrer"
-                aria-label="Link to Linkedin profile"
-                href="https://www.linkedin.com/in/minard-siobal-dev"
-                target="_blank"
-              >
-                <Linkedin className="size-6 fill-white opacity-60 hover:fill-accent hover:opacity-100" />
-              </Link>
-            </div>
+            {socialIcons.map((social) => (
+              <ul key={social.tooltip}>
+                <li className="relative group">
+                  <Tooltip title={social.tooltip} position={"-top-14"} />
+                  <Link
+                    rel="noopener noreferrer"
+                    href={social.link}
+                    target="_blank"
+                  >
+                    <social.icon
+                      className="size-6 fill-white opacity-60 hover:fill-accent hover:opacity-100"
+                      alt={social.alt}
+                    />
+                  </Link>
+                </li>
+              </ul>
+            ))}
           </div>
         </div>
       </div>
