@@ -17,7 +17,7 @@ export default function Projects() {
             <Link
               href={item.projectLink}
               target={item.projectLink === "/" ? "" : "_blank"}
-              className="inline-flex items-center gap-x-2 relative"
+              className="inline-flex focus items-center gap-x-2 relative"
             >
               <Image
                 className="size-6 hover:opacity-100"
@@ -39,7 +39,7 @@ export default function Projects() {
             <Link
               href={item.githubLink}
               target="_blank"
-              className="mt-4 flex gap-x-2 group/github items-center"
+              className="mt-4 focus flex gap-x-2 group/github items-center"
             >
               <Github className="size-5 fill-white opacity-60 group-hover/github:fill-accent group-hover/github:transition-all group-hover/github:opacity-100" />
               <span className="opacity-60 group-hover/github:text-accent group-hover/github:transition-all text-sm group-hover/github:opacity-100">

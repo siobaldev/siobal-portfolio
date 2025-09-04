@@ -109,7 +109,10 @@ export default function Contact() {
 
       <p>
         <span className="opacity-60">Please contact me directly at</span>{" "}
-        <Link href="m&#97;ilt&#111;&#58;&#37;&#55;3&#98;%6&#67;&#109;nr%6&#52;%4&#48;g&#109;ail&#46;&#37;63&#111;m">
+        <Link
+          href="m&#97;ilt&#111;&#58;&#37;&#55;3&#98;%6&#67;&#109;nr%6&#52;%4&#48;g&#109;ail&#46;&#37;63&#111;m"
+          className="focus"
+        >
           &#115;b&#108;mnrd&#64;&#103;m&#97;&#105;l&#46;com
         </Link>{" "}
         <span className="opacity-60"> or through this form</span>
@@ -190,7 +193,7 @@ export default function Contact() {
 
         <button
           type="submit"
-          className="bg-button-gradient justify-center py-3 rounded-md uppercase tracking-widest text-sm font-semibold flex gap-x-2 group items-center"
+          className="bg-button-gradient justify-center py-3 rounded-md uppercase tracking-widest text-sm font-semibold flex gap-x-2 group items-center focus"
           disabled={isSubmitting}
         >
           {isSubmitting ? "SENDING..." : "SEND MESSAGE"}
@@ -200,53 +203,3 @@ export default function Contact() {
     </section>
   );
 }
-
-{
-  /* <button
-onClick={() =>
-  toast.error("Message Title", {
-    description: "Please try again later.",
-    duration: 5000,
-    position: isMobile ? "top-center" : "bottom-right",
-    classNames: {
-      icon: "text-red-500",
-      toast:
-        "bg-secondary shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] text-white/87 drop-shadow-lg border-0",
-      description: "text-white/60",
-    },
-  })
-}
-className="bg-button-gradient justify-center py-3 rounded-md uppercase tracking-widest text-sm font-semibold flex gap-x-2 group items-center"
->
-Send Message
-<SendIcon className="size-4 fill-white group-hover:-translate-y-1 group-hover:translate-x-1 transition motion-reduce:transition-none" />
-</button> */
-}
-
-// const formSchema = z.object({
-//   name: z.string().min(2, {
-//     message: "Name must be at least 2 characters.",
-//   }),
-//   email: z.string().email({
-//     message: "Please enter a valid email address.",
-//   }),
-//   message: z.string().min(10, {
-//     message: "Message must be at least 10 characters.",
-//   }),
-// });
-
-// if (!response.ok) {
-//   const errorData = await response.json();
-//   throw new Error(
-//     toast.error(response.status, {
-//       description: errorData.message,
-//       duration: 5000,
-//       position: isMobile ? "top-center" : "bottom-right",
-//       classNames: {
-//         icon: "text-red-500",
-//         toast:
-//           "bg-secondary shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] text-white/87 drop-shadow-lg border-0",
-//       },
-//     })
-//   );
-// }

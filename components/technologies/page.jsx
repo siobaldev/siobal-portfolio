@@ -16,7 +16,7 @@ export default function Technologies() {
       <div className="flex items-center justify-center gap-x-4">
         <button
           onClick={() => setTechnology("Main")}
-          className={`text-sm ${
+          className={`text-sm focus ${
             technology === "Main" ? `opacity-87` : `opacity-60`
           }`}
         >
@@ -25,7 +25,7 @@ export default function Technologies() {
         |
         <button
           onClick={() => setTechnology("All")}
-          className={`text-sm ${
+          className={`text-sm focus ${
             technology === "All" ? `opacity-100` : `opacity-60`
           }`}
         >

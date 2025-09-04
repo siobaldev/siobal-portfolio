@@ -50,10 +50,17 @@ export default function About() {
             position={"-bottom-24"}
           />
           <HangingCat
-            className={`size-12 absolute -right-5  top-[16px] cursor-pointer transition-colors duration-300 ${
+            tabIndex="0"
+            className={`w-fit absolute -right-2 top-[16px] cursor-pointer transition-colors duration-300 focus ${
               isNekoVisible ? "fill-[#A47764]" : "fill-white"
             }`}
             onClick={toggleNeko}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                toggleNeko();
+              }
+            }}
           />
         </span>
       </p>

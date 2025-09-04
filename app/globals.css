@@ -48,4 +48,8 @@
       transform: translate(-15%, -20%);
     }
   }
+
+  .focus {
+    @apply rounded-sm focus:outline-accent focus:outline-none;
+  }
 }
