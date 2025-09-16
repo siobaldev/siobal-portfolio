@@ -49,7 +49,7 @@ export default function Header() {
                     href={social.link}
                     target="_blank"
                     className="focus flex"
-                    alt={social.label}
+                    aria-label={social.label}
                   >
                     <social.icon className="size-6 rounded-md fill-white opacity-60 hover:fill-accent hover:opacity-100" />
                   </Link>
