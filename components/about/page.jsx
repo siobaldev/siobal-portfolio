@@ -36,12 +36,21 @@ export default function About() {
       </h1>
       <p>
         <span className="opacity-60">
-          Hey! I&apos;m Minard, a front-end developer who started taking
-          interest in awesome websites in 2023. I specialize in UI design and
-          crafting engaging experiences with great attention to detail. <br />{" "}
+          Hey! I&apos;m Minard, a web developer specializing in UI design and
+          crafting engaging experiences with meticulous attention to detail.
+          Since discovering web development in 2023, I&apos;ve grown from
+          learning the fundamentals to building real applications.
           <br />
-          When I&apos;m not coding, you&apos;ll find me reading comics, playing
-          AQW, or browsing meowrot contents. I love{" "}
+          <br />
+          Now I&apos;m expanding into backend development, working with APIs to
+          create more complete web solutions. I&apos;m focused on combining
+          beautiful, intuitive interfaces with robust functionality that
+          delivers seamless user experiences.
+          <br />
+          <br />
+          When I&apos;m not coding, you&apos;ll find me keeping up with tech
+          news, reading novels and comics, gaming, or browsing meowrot contents.
+          I love{" "}
         </span>
         <span className="underline relative group">
           <span className="opacity-60">cats</span>
