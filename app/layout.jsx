@@ -11,6 +11,13 @@ const geistSans = localFont({
 export const metadata = {
   title: "Minard Siobal | Portfolio",
   description: "A portfolio to showcase my projects and skills/technologies.",
+  verification: {
+    google: "Zfuql6i4ntFcw5ESM4-gucPqhmam6CqDLr62PBe_TL4",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({ children }) {
