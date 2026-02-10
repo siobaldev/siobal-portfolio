@@ -10,7 +10,8 @@ const geistSans = localFont({
 
 export const metadata = {
   title: "Minard Siobal | Portfolio",
-  description: "A portfolio to showcase my projects and skills/technologies.",
+  description:
+    "Hey there! I'm Minard Siobal, a web developer crafting artistic and functional digital experiences, combining beautiful UIs with seamless, well-crafted functionality and attention to detail.",
   verification: {
     google: "Zfuql6i4ntFcw5ESM4-gucPqhmam6CqDLr62PBe_TL4",
   },
