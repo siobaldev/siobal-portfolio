@@ -22,18 +22,18 @@ export default function TableOfContents() {
     };
 
     const setupObservers = () => {
+      const observer = new IntersectionObserver(observerCallback, {
+        root: null,
+        threshold: 0.2,
+        rootMargin: "0px 0px -50% 0px",
+      });
+
       navItems.forEach((item) => {
         const sectionId = item.title.replace("#", "");
         const element = document.getElementById(sectionId);
         if (element) {
-          element.setAttribute("data-title", item.title);
-          const observer = new IntersectionObserver(observerCallback, {
-            root: null,
-            threshold: 0.6,
-            rootMargin: "-150px 0px -300px 0px",
-          });
+          element.dataset.title = item.title;
           observer.observe(element);
-          observers.push(observer);
         }
       });
     };
@@ -66,7 +66,7 @@ export default function TableOfContents() {
   };
 
   return (
-    <div className="hidden lg:flex lg:flex-col gap-y-3">
+    <div className="hidden lg:flex lg:flex-col gap-y-3 mb-6">
       {navItems.map((item) => (
         <ul key={item.href}>
           <li className="list-none">
@@ -78,7 +78,7 @@ export default function TableOfContents() {
                 {
                   "before:bg-white/100 before:w-20 text-white/100 before:transition-all before:duration-300 before:ease-in-out before:opacity-100":
                     activeSection === item.title,
-                }
+                },
               )}
             >
               <span className="uppercase tracking-widest text-sm font-medium">

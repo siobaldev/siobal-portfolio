@@ -3,53 +3,54 @@
 @tailwind utilities;
 
 @layer base {
-  .grain:after {
-    content: "";
-    background-image: url("/assets/grain.webp");
-    height: 230%;
-    width: 150%;
-    position: fixed;
-    animation: animateGrain 8s steps(10) infinite;
-  }
-  @keyframes animateGrain {
-    0%,
-    100% {
-      transform: translate(0, 0);
-    }
-    10% {
-      transform: translate(-5%, -10%);
-    }
-    20% {
-      transform: translate(-15%, -20%);
-    }
-    30% {
-      transform: translate(-5%, -10%);
-    }
-    40% {
-      transform: translate(-15%, -20%);
+    .grain:after {
+        content: "";
+        background-image: url("/assets/grain.webp");
+        height: 230%;
+        width: 150%;
+        position: fixed;
+        animation: animateGrain 8s steps(10) infinite;
     }
 
-    50% {
-      transform: translate(-5%, -10%);
-    }
-    60% {
-      transform: translate(-15%, -20%);
-    }
-    70% {
-      transform: translate(-5%, -10%);
-    }
-    80% {
-      transform: translate(-15%, -20%);
-    }
-    90% {
-      transform: translate(-5%, -10%);
-    }
-    100% {
-      transform: translate(-15%, -20%);
-    }
-  }
+    @keyframes animateGrain {
+        0%,
+        100% {
+            transform: translate(0, 0);
+        }
+        10% {
+            transform: translate(-5%, -10%);
+        }
+        20% {
+            transform: translate(-15%, -20%);
+        }
+        30% {
+            transform: translate(-5%, -10%);
+        }
+        40% {
+            transform: translate(-15%, -20%);
+        }
 
-  .focus {
-    @apply rounded-sm focus:outline-accent focus:outline-none;
-  }
+        50% {
+            transform: translate(-5%, -10%);
+        }
+        60% {
+            transform: translate(-15%, -20%);
+        }
+        70% {
+            transform: translate(-5%, -10%);
+        }
+        80% {
+            transform: translate(-15%, -20%);
+        }
+        90% {
+            transform: translate(-5%, -10%);
+        }
+        100% {
+            transform: translate(-15%, -20%);
+        }
+    }
+
+    .focus {
+        @apply rounded-sm focus:outline-accent focus:outline-none;
+    }
 }
