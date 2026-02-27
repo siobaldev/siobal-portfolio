@@ -8,10 +8,12 @@ const geistSans = localFont({
   weight: "400 500 700 900",
 });
 
+const description =
+  "Hey there! I'm Minard Siobal, a web developer creating artistic, functional digital experiences that blend striking design, smooth performance, and thoughtful detail.";
+
 export const metadata = {
-  title: "Minard Siobal | Portfolio",
-  description:
-    "Hey there! I'm Minard Siobal, a web developer creating artistic, functional digital experiences that blend striking design, smooth performance, and thoughtful detail.",
+  title: "Minard Siobal",
+  description: description,
   keywords: [
     "Minard Siobal",
     "Web Developer",
@@ -22,13 +24,12 @@ export const metadata = {
   ],
   openGraph: {
     title: "Minard Siobal | Web Developer",
-    description:
-      "Crafting artistic and functional digital experiences with beautiful UI and seamless performance.",
+    description: description,
     url: "https://siobal-portfolio.vercel.app/",
     siteName: "Minard Siobal Portfolio",
     images: [
       {
-        url: "https://siobal-portfolio.vercel.app/og-image.png",
+        url: "https://siobal-portfolio.vercel.app/assets/og-image.png",
         width: 1200,
         height: 630,
         alt: "Minard Siobal Portfolio Preview",
@@ -40,9 +41,8 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Minard Siobal | Portfolio",
-    description:
-      "Hey there! I'm Minard Siobal, a web developer creating artistic, functional digital experiences that blend striking design, smooth performance, and thoughtful detail.",
-    images: ["https://siobal-portfolio.vercel.app/og-image.png"],
+    description: description,
+    images: ["https://siobal-portfolio.vercel.app/assets/og-image.png"],
   },
 
   verification: {
