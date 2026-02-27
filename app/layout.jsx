@@ -11,7 +11,40 @@ const geistSans = localFont({
 export const metadata = {
   title: "Minard Siobal | Portfolio",
   description:
-    "Hey there! I'm Minard Siobal, a web developer crafting artistic and functional digital experiences, combining beautiful UIs with seamless, well-crafted functionality and attention to detail.",
+    "Hey there! I'm Minard Siobal, a web developer creating artistic, functional digital experiences that blend striking design, smooth performance, and thoughtful detail.",
+  keywords: [
+    "Minard Siobal",
+    "Web Developer",
+    "Frontend Developer",
+    "React Developer",
+    "Next.js Developer",
+    "Portfolio",
+  ],
+  openGraph: {
+    title: "Minard Siobal | Web Developer",
+    description:
+      "Crafting artistic and functional digital experiences with beautiful UI and seamless performance.",
+    url: "https://siobal-portfolio.vercel.app/",
+    siteName: "Minard Siobal Portfolio",
+    images: [
+      {
+        url: "https://siobal-portfolio.vercel.app/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Minard Siobal Portfolio Preview",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Minard Siobal | Portfolio",
+    description:
+      "Hey there! I'm Minard Siobal, a web developer creating artistic, functional digital experiences that blend striking design, smooth performance, and thoughtful detail.",
+    images: ["https://siobal-portfolio.vercel.app/og-image.png"],
+  },
+
   verification: {
     google: "Zfuql6i4ntFcw5ESM4-gucPqhmam6CqDLr62PBe_TL4",
   },
