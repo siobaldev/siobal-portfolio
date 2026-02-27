@@ -50,7 +50,7 @@
         }
     }
 
-    .focus {
+    :focus-visible {
         @apply rounded-sm focus:outline-accent focus:outline-none;
     }
 }
